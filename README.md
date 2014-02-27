@@ -6,6 +6,8 @@ co-op site for the current day and the past 30 days (at present). It uses a
 simple Python script to scrape the Snow Depth value off of the online 
 observation card and write it to a database.
 
+**Working site:** <http://www.thecloudonline.net/psusnowdepth/>
+
 # How can I fork you and make my own version?
 
 First of all, awesome! Thanks for your interest! You obviously need to set up a
