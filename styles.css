@@ -1,0 +1,72 @@
+/* Page Styles */
+
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+body {
+  background-color: #95C5DE;
+  text-align: center;
+  font-family: "Noto Sans", "Arial", sans;
+}
+
+h1 { font-size: 20pt; }
+
+h3 { font-size: 12pt; }
+
+.graphwrapper {
+  /* This combination seems to work well */
+  width: 75%;
+  padding-bottom: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+
+#depthgraph {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background-color: white;
+  box-shadow: white 0 0 50px;
+}
+
+#currentdepth {
+  font-size: 40pt;
+  font-weight: bold;
+}
+
+#currentdatelabel {
+  font-size: 9pt;
+}
+
+#currentdepth, #currentdatelabel {
+  text-align: center;
+}
+
+.axisLabel {
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+}
+
+.axisLabel .yaxisLabel {
+  top: 50%;
+  left: 2px;
+  transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+.axisLabel xaxisLabel {
+  bottom: 2px;
+  left: 50%;
+}
+
+footer {
+  font-size: smaller;
+  margin-top: 1em;
+}
