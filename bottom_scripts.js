@@ -8,8 +8,8 @@ $(document).ready(function(){
       var curdepthval = rawdata[rawdata.length - 1][1];
       $('#currentdepth').text((curdepthval == -1) ? '&lt; 1' : curdepthval);
       var curdepthdate = new Date(rawdata[rawdata.length - 1][0]);
-      $('#currentdatelabel').text(" as of " + (curdepthdate.getMonth()+1) + '/' + curdepthdate.getDate() + '/' + 
-        curdepthdate.getFullYear());
+      $('#currentdatelabel').text(" as of " + (curdepthdate.getUTCMonth()+1) + '/' + curdepthdate.getUTCDate() + '/' + 
+        curdepthdate.getUTCFullYear());
 
       var graphdata = rawdata;
       for (var i = 0; i < graphdata.length; i++) {
